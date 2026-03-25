@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .har{
+                width: 100%;
+            }
+            table{
+                border: 1px solid black;
+            }
+            th,td{
+                padding: 8px;
+            }
+            th{
+                text-align: center;
+            }
+            .har2{
+                text-align: center;
+            }
+            body{
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <th style="font-weight: bold;font-size: 20px;"
+                    colspan="2">Library Membership Registration Form</th>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="fullname" class="har1"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" class="har1"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" class="har1"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="tel" name="number" class="har1"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="dateofbirth"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" type="male">Male
+                        <input type="radio" name="gender" type="female">Female
+                        <input type="radio" name="gender" type="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Membership Type</td>
+                    <td>
+                        <select>
+                            <option>Select Membership</option>
+                            <option>Pro</option>
+                            <option>Ultra</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>
+                        <select>
+                            <option>Select Department</option>
+                            <option>CSE</option>
+                            <option>MECH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Preffered Book Categories</td>
+                    <td>
+                        <input type="checkbox" name="book">Science
+                        <input type="checkbox" name="book">Literature
+                        <input type="checkbox" name="book">Technology<br>
+                        <input type="checkbox" name="book">History
+                        <input type="checkbox" name="book">Biography
+                    </td>
+                </tr>
+                <tr>
+                    <td>Membership Start Date</td>
+                    <td><input type="date" name="memdate"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="address" class="har1"></td>
+                </tr>
+                <tr class="har2">
+                    <td><input type="submit" name="submit" style="background-color: green;color: white;width: 100px;height: auto;"></td>
+                    <td><input type="reset" name="reset" style="background-color: red;color: white;width: 100px;height: auto;"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

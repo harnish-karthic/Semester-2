@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onmouseover Event</h2>
+
+<img 
+onmouseover="bigImg(this)" 
+onmouseout="normalImg(this)"
+src=c:\Users\harni\Downloads\a6b98adf-7a9a-4170-8e20-969e5c0cf35c.jpg
+alt="Bulb" 
+width="302" 
+height="302">
+
+<p>Hover over the image!</p>
+
+<script>
+function bigImg(x){
+    x.style.height = "80px";
+    x.style.width = "80px";
+}
+
+function normalImg(x){
+    x.style.height = "302px";
+    x.style.width = "302px";
+}
+</script>
+
+</body>
+</html>

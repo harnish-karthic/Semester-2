@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+                text-align: center;
+            }
+            th{
+                background-color: rgb(30, 115, 212);
+                color: white;
+            }
+            td{
+                background-color: rgb(208, 234, 255);
+            }
+            .kar1{
+                text-align: center;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <th>Member Id</th>
+                    <th>Member Details(Nested Table)</th>
+                    <th>Book Title</th>
+                    <th>Due Date</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">101</td>
+                    <td>
+                        <table class="kar1">
+                        <tr>
+                            <td>Name</td>
+                            <td>Rahul</td>
+                        </tr>
+                        <tr>
+                            <td>Dept</td>
+                            <td>Science</td>
+                        </tr>
+                        </table>
+                    </td>
+                    <td>Physics</td>
+                    <td>10-04-2026</td>
+                </tr>
+                <tr>
+                    <td>
+                    <table class="kar1">
+                        <tr>
+                            <td>Name</td>
+                            <td>Rahul</td>
+                        </tr>
+                        <tr>
+                            <td>Dept</td>
+                            <td>Science</td>
+                        </tr>
+                    </table>    
+                    </td>
+                    <td colspan="2">Book Returned</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>
+                        <table class="kar1">
+                        <tr>
+                            <td>Name</td>
+                            <td>Anita</td>
+                        </tr>
+                        <tr>
+                            <td>Dept</td>
+                            <td>Arts</td>
+                        </tr>
+                        </table>
+                    </td>
+                    <td>History</td>
+                    <td>15-04-2026</td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
